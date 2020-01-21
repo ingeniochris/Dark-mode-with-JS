@@ -6,7 +6,7 @@ body{
         color: rgb(255, 255, 255);
         transition: 1s ease all;
         .jumbotron{
-            background: rgb(32, 32, 32);
+            background: rgb(58, 58, 58);
         }
     }
 }
@@ -33,16 +33,15 @@ body{
         left: 0;
         right: unset;
         border-radius: 100px;
-        transition: 3s ease all;
+        transition: 20s ease all;
     }
 
     &.active{
         background: orange;
         color: black;
-
         &::after{
             left: unset;
-            right: 0;
+            right: 0px;
         }
     }
 

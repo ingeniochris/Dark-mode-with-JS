@@ -12,7 +12,7 @@ body.dark {
 }
 
 body.dark .jumbotron {
-  background: #202020;
+  background: #3a3a3a;
 }
 
 .switch {
@@ -39,8 +39,8 @@ body.dark .jumbotron {
   left: 0;
   right: unset;
   border-radius: 100px;
-  -webkit-transition: 3s ease all;
-  transition: 3s ease all;
+  -webkit-transition: 20s ease all;
+  transition: 20s ease all;
 }
 
 .switch.active {
@@ -50,7 +50,7 @@ body.dark .jumbotron {
 
 .switch.active::after {
   left: unset;
-  right: 0;
+  right: 0px;
 }
 
 .switch span {
