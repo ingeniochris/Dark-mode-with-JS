@@ -1,0 +1,56 @@
+body{
+    background: #f1f1f1;
+    transition: 1s ease all;
+    &.dark{
+        background: #111111;
+        color: rgb(255, 255, 255);
+        transition: 1s ease all;
+        .jumbotron{
+            background: rgb(32, 32, 32);
+        }
+    }
+}
+
+.switch{
+    display: flex;
+    outline: none;
+    border-radius: 100px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    background: #343D5B;
+    color: white;
+    
+
+    &::after{
+        content: '';
+        width: 32px;
+        height: 32px;
+        display: block;
+        position: absolute;
+        background: #f1f1f1;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: 3s ease all;
+    }
+
+    &.active{
+        background: orange;
+        color: black;
+
+        &::after{
+            left: unset;
+            right: 0;
+        }
+    }
+
+    span{
+        width: 30px;
+        height:30px;
+        line-height: 30px;
+        background: none;
+
+    }
+}

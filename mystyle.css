@@ -1,0 +1,62 @@
+body {
+  background: #f1f1f1;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+body.dark {
+  background: #111111;
+  color: white;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+body.dark .jumbotron {
+  background: #202020;
+}
+
+.switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  border-radius: 100px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  background: #343D5B;
+  color: white;
+}
+
+.switch::after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: 3s ease all;
+  transition: 3s ease all;
+}
+
+.switch.active {
+  background: orange;
+  color: black;
+}
+
+.switch.active::after {
+  left: unset;
+  right: 0;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: none;
+}
+/*# sourceMappingURL=mystyle.css.map */
