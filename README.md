@@ -3,6 +3,5 @@
 
 Verify the deployment by navigating to your server address in your preferred browser.
 
-```dark
+
 See [Dark and Night](https://sad-johnson-ad336a.netlify.com/)
-```
